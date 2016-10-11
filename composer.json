@@ -1,0 +1,10 @@
+{
+  "name": "Foodoo",
+  "description": "A food truck service",
+  "type": "project",
+  "require": {
+    "php": ">=5.5.9",
+    "guzzlehttp/guzzle": "^6.2",
+    "vlucas/phpdotenv": "^2.4"
+  }
+}

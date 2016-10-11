@@ -1,0 +1,80 @@
+$black: #34495e;
+$white: #fff;
+$gray: #7f8c8d;
+$silver: #f3f3f4;
+$blue: #54C8FF;
+$dark-blue: #196099;
+$red: #F64747;
+$green: #2ecc71;
+
+$font-body: 'PT Sans', sans-serif;
+$font-color: $dark-blue;
+$line-height-1: 1;
+$line-height-2: 1.125;
+$line-height-3: 1.25;
+$line-height-4: 1.5;
+$letter-spacing: 1;
+$caps-letter-spacing: .2em;
+$bold-font-weight: bold;
+
+$highlight-background-color: #CCE2FF;
+$highlight-color: $font-color;
+
+$header-font: 'PT Sans', sans-serif;
+$header-line-height: 1.1;
+$header-margin: 1em 0 .5rem;
+$header-font-weight: 100;
+
+$h1: 2em;
+$h2: 1.5em;
+$h3: 1.25em;
+$h4: 1em;
+$h5: .875em;
+$h6: .75em;
+
+$link-color: $blue;
+$link-underline: none;
+$link-hover-color: darken(saturate($link-color, 20), 15);
+$link-hover-underline: none;
+
+$width-1: 27rem;
+$width-2: 32rem;
+$width-3: 48rem;
+$width-4: 64rem;
+
+$space-1: .5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+$breakpoint-sm: '(min-width: 40em)';
+$breakpoint-md: '(min-width: 60em)';
+$breakpoint-lg: '(min-width: 72em)';
+
+$breakpoint-xs: '(max-width: 40em)';
+$breakpoint-sm-md: '(min-width: 40em) and (max-width: 52em)';
+$breakpoint-md-lg: '(min-width: 52em) and (max-width: 64em)';
+
+$border-radius: 2px;
+
+$field-color: $black;
+$field-background-color: $white;
+$field-padding-y: .5em;
+$field-padding-x: 1em;
+
+$button-font-family: inherit;
+$button-font-size: inherit;
+$button-line-height: 1;
+$button-padding-y: .75em;
+$button-padding-x: 1.5em;
+
+$button-color: $font-color;
+$button-background-color: #e0e1e2;
+
+$modal-overlay: $blue;
+$modal-overlay-opacity: .5;
+
+$z1: 1;
+$z2: 2;
+$z3: 3;
+$z4: 4;

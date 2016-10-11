@@ -1,0 +1,85 @@
+.btn-primary {
+  color: $button-color;
+  background-color: $button-background-color;
+  border-radius: $border-radius;
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.0625);
+}
+.btn-primary:active {
+  box-shadow: inset 0 0 0 20rem rgba(0,0,0,.125),
+    inset 0 3px 4px 0 rgba(0,0,0,.25),
+    0 0 1px rgba(0,0,0,.125);
+}
+
+.btn-loading {
+  position: relative;
+}
+.btn-loading:disabled:before,
+.btn-loading:disabled:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.btn-loading:disabled:before {
+  animation: bg-loading 10s infinite;
+}
+.btn-loading:disabled:after {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: auto;
+  animation: pulsate 1s ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(.1);
+    opacity: 0.0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
+@keyframes bg-loading {
+    0%   { background-color: $blue; }
+    1%   { background-color: $green; }
+    16%  { background-color: #CAFC00; }
+    32%  { background-color: #FC8600; }
+    48%  { background-color: $red; }
+    64%  { background-color: #FC00CA; }
+    80%  { background-color: #8600FC; }
+    100% { background-color: $blue; }
+}
+
+.btn-attached {
+  align-self: stretch;
+  margin-bottom: -1px;
+  margin-left: -1px;
+  margin-right: -1px;
+  border-radius: $border-radius $border-radius 0 0;
+  box-shadow: 0 0 0 1px rgba(34,36,38,.15) inset;
+  &-bottom {
+    border-radius: 0 0 $border-radius $border-radius;
+    margin-top: -1px;
+    position: relative;
+    &:before {
+      content: '';
+      background: inherit;
+      height: 1px;
+      position: absolute;
+      top: 0px;
+      left: 1px;
+      right: 1px;
+    }
+  }
+}

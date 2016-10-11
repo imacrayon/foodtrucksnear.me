@@ -1,0 +1,36 @@
+.btn {
+  font-family: $button-font-family;
+  font-size: $button-font-size;
+  font-weight: inherit;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  display: inline-block;
+  line-height: $button-line-height;
+  padding: $button-padding-y $button-padding-x;
+  margin: 0 .25em 0 0;
+  height: auto;
+  border: none;
+  background: transparent;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: transparent;
+  transition: all .3s;
+}
+
+.btn:hover {
+  text-decoration: none;
+}
+.btn:disabled {
+  opacity: .5;
+}
+::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* Fix: Firefox bug https://bugzilla.mozilla.org/show_bug.cgi?id=984869 */
+.btn .icon {
+  float: left;
+}

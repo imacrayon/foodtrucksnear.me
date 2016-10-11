@@ -1,0 +1,77 @@
+form {
+  font-size: .875rem;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: .25rem;
+  color: lighten($field-color, 35);
+  line-height: 1.1;
+  font-size: .75rem;
+}
+
+::-webkit-input-placeholder { color: lighten($field-color, 35) }
+::-moz-placeholder { color: lighten($field-color, 35) }
+::-ms-input-placeholder { color: lighten($field-color, 35) }
+
+input,
+textarea {
+  &:focus::-webkit-input-placeholder { color: lighten($field-color, 5) }
+  &:focus::-moz-placeholder { color: lighten($field-color, 5) }
+  &:focus::-ms-input-placeholder { color: lighten($field-color, 5) }
+}
+
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: normal;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: ($field-padding-y * 1.25) ($field-padding-x * 1.25);
+  color: $field-color;
+  background-color: $field-background-color;
+  -webkit-appearance: none;
+  border: 1px solid rgba(34,36,38,.15);
+  border-radius: $border-radius;
+  outline: none;
+  box-shadow: none;
+  transition: all .3s;
+  &:focus {
+    border-color: $red;
+  }
+  @media #{$breakpoint-sm} {
+    padding: $field-padding-y $field-padding-x;
+  }
+}
+
+textarea {
+  height: 7rem;
+  line-height: 1.4
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: $blue;
+}
+
+.field {
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  /**
+   * Chrome datetime-local input fix
+   * http://thewebdesignforum.co.uk/topic/2178-more-date-time-woes/#entry22298
+   */
+  min-width: 0;
+}
+.field-text {
+  font-size: .875rem;
+  line-height: 1.2;
+  color: $gray;
+}
+.has-error .field-text {
+  color: $red;
+}
