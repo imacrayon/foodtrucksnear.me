@@ -62,7 +62,7 @@ export default {
             if (!event.start.moment.isBefore()) {
               event.time = event.start.moment.calendar() + event.time
             } else {
-              this.nearbyCount = event.distance > 1 ? this.nearbyCount : this.nearbyCount + 1
+              this.nearbyCount = (!event.distance || event.distance > 1) ? this.nearbyCount : this.nearbyCount + 1
               event.time = 'now' + event.time
               // Normalize all current events so they can be sorted by distance
               event.start.moment = NOW
